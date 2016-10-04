@@ -1,0 +1,7 @@
+/.idea
+/node_modules
+/typings
+/.env
+/web/dist/vendors
+
+

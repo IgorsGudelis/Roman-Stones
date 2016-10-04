@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>Angular 2 Messenger</title>
+
+	<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/app/styles/main.css">
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+	<script src="/vendors/core-js/client/shim.min.js"></script>
+
+    <script src="/vendors/zone.js/dist/zone.js"></script>
+    <script src="/vendors/reflect-metadata/Reflect.js"></script>
+    <script src="/vendors/systemjs/dist/system.src.js"></script>
+
+	<script src="/vendors/jquery/dist/jquery.min.js"></script>
+	<script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+</head>
+<body>
+<my-app>Loading...</my-app>
+
+<script>
+    System.import('app').catch(function(err){ console.error(err);  });
+</script>
+</body>
+</html>
