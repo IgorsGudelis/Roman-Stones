@@ -59,7 +59,7 @@ lazyRequireTask('serve', './tasks/serve.js', {
 gulp.task('watch', function() {
     gulp.watch(path.src.html, gulp.series('build:html'));
     gulp.watch(path.src.ts, gulp.series('build:js'));
-    gulp.watch(path.src.scss, gulp.series('build:css'));
+    gulp.watch(path.watch.scss, gulp.series('build:css'));
     gulp.watch(path.src.img, gulp.series('build:img'));
 });
 

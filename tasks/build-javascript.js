@@ -17,7 +17,7 @@ module.exports = function(options) {
 			$.if(!isDevelopment, $.uglify()),//if prodaction build - minifies js
 			$.if(isDevelopment, $.sourcemaps.write()),//if development build - writies sourcemaps
 			gulp.dest(options.dest)
-		).on('error', $.notify.onError());
+		);//.on('error', $.notify.onError());
 
 	}
 }

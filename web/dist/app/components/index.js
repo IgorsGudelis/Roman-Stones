@@ -1,1 +1,7 @@
-"use strict";var app_component_1=require("./app-component/app.component");exports.AppComponent=app_component_1.AppComponent;
+"use strict";
+var app_component_1 = require('./app/app.component');
+exports.AppComponent = app_component_1.AppComponent;
+var nav_component_1 = require('./navigation/nav.component');
+exports.NavComponent = nav_component_1.NavComponent;
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLDhCQUEyQixxQkFBcUIsQ0FBQztBQUF6QyxvREFBeUM7QUFDakQsOEJBQTJCLDRCQUE0QixDQUFDO0FBQWhELG9EQUFnRCIsImZpbGUiOiJjb21wb25lbnRzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHtBcHBDb21wb25lbnR9IGZyb20gJy4vYXBwL2FwcC5jb21wb25lbnQnO1xyXG5leHBvcnQge05hdkNvbXBvbmVudH0gZnJvbSAnLi9uYXZpZ2F0aW9uL25hdi5jb21wb25lbnQnOyJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

@@ -16,10 +16,13 @@ module.exports = {
 		img: 'app_api/**/*.{png,jpg}'
 	},
 	build: {//path for files after build
-		html: 'public/',
+		html: app.baseDest + 'app/',
 		js: app.baseDest + 'app/',
 		css: app.baseDest + 'app/',
 		img: app.baseDest + 'app/imgs/'
+	},
+	watch: {
+		scss: app.baseSrc + '/**/*.scss'
 	},
 	vendor: {
 		src: {//path of module in node_modules by default

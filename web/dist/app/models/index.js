@@ -1,0 +1,7 @@
+"use strict";
+var category_1 = require('./category');
+exports.Category = category_1.Category;
+var product_1 = require('./product');
+exports.Product = product_1.Product;
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vZGVscy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEseUJBQXVCLFlBQVksQ0FBQztBQUE1Qix1Q0FBNEI7QUFDcEMsd0JBQXNCLFdBQVcsQ0FBQztBQUExQixvQ0FBMEIiLCJmaWxlIjoibW9kZWxzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHtDYXRlZ29yeX0gZnJvbSAnLi9jYXRlZ29yeSc7XHJcbmV4cG9ydCB7UHJvZHVjdH0gZnJvbSAnLi9wcm9kdWN0JztcclxuXHJcbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

@@ -1,0 +1,16 @@
+"use strict";
+var AppSettings = (function () {
+    function AppSettings() {
+    }
+    AppSettings.MAIN_CATEGORY_NAME = 'Silver Skull';
+    AppSettings.PRODUCTS_LINE_SIZE = 3;
+    AppSettings.CATEGORIES_URL = '/api/categories/';
+    AppSettings.PRODUCTS_URL = '/products/';
+    AppSettings.REGISTER_URL = '/api/register';
+    AppSettings.LOGIN_URL = '/api/login';
+    AppSettings.TOKEN_NAME = 'roman-stones-token';
+    return AppSettings;
+}());
+exports.AppSettings = AppSettings;
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNldHRpbmdzL2FwcFNldHRpbmdzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtJQUFBO0lBUUEsQ0FBQztJQVBPLDhCQUFrQixHQUFHLGNBQWMsQ0FBQztJQUNwQyw4QkFBa0IsR0FBRyxDQUFDLENBQUM7SUFDdkIsMEJBQWMsR0FBRyxrQkFBa0IsQ0FBQztJQUNwQyx3QkFBWSxHQUFHLFlBQVksQ0FBQztJQUM1Qix3QkFBWSxHQUFHLGVBQWUsQ0FBQztJQUMvQixxQkFBUyxHQUFHLFlBQVksQ0FBQztJQUN6QixzQkFBVSxHQUFHLG9CQUFvQixDQUFDO0lBQzFDLGtCQUFDO0FBQUQsQ0FSQSxBQVFDLElBQUE7QUFSWSxtQkFBVyxjQVF2QixDQUFBIiwiZmlsZSI6InNldHRpbmdzL2FwcFNldHRpbmdzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIEFwcFNldHRpbmdzIHtcclxuXHRzdGF0aWMgTUFJTl9DQVRFR09SWV9OQU1FID0gJ1NpbHZlciBTa3VsbCc7XHJcblx0c3RhdGljIFBST0RVQ1RTX0xJTkVfU0laRSA9IDM7XHJcblx0c3RhdGljIENBVEVHT1JJRVNfVVJMID0gJy9hcGkvY2F0ZWdvcmllcy8nO1xyXG5cdHN0YXRpYyBQUk9EVUNUU19VUkwgPSAnL3Byb2R1Y3RzLyc7XHJcblx0c3RhdGljIFJFR0lTVEVSX1VSTCA9ICcvYXBpL3JlZ2lzdGVyJztcclxuXHRzdGF0aWMgTE9HSU5fVVJMID0gJy9hcGkvbG9naW4nO1xyXG5cdHN0YXRpYyBUT0tFTl9OQU1FID0gJ3JvbWFuLXN0b25lcy10b2tlbic7XHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
