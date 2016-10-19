@@ -1,37 +1,32 @@
-<div class="navbar navbar-inverse navbar-static-top">
-	<div class="container">
-		<div class="navbar-header">
-			<a class="navbar-brand divider" href="#">Roman Stones Luxury</a>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerMenu">
-				<span class="sr-only">Open</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-
-		<div class="collapse navbar-collapse" id="headerMenu">
-			<ul class="nav navbar-nav">
-				<li><a href="#">Home</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Silver Skull</a></li>
-						<li><a href="#">Gold Skull</a></li>
-						<li><a href="#">Anchor</a></li>
-					</ul>
-				</li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Contacts</a></li>
-			</ul>
-
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-
-				<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-			</ul>
-		</div>
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle"
+				data-toggle="collapse" data-target="#rs-navbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
 	</div>
-</div>
+	<div class="collapse navbar-collapse" id="rs-navbar">
+		<ul class="nav navbar-nav">
+			<li><a href="#">Home</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Anchor</a></li>
+					<li><a href="#">Gold Skull</a></li>
+					<li><a href="#">Silver Skull</a></li>
+				</ul>
+			</li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a></li>
+			<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+			<li *ngIf="false"><a href="#">Username</a></li>
+			<li *ngIf="false"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+			<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+</nav>

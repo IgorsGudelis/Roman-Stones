@@ -1,0 +1,103 @@
+.navbar-header {
+	background-color: #595959;
+
+	/* Remove border color from the collapsible button */
+	.navbar-toggle {
+		border: transparent;
+	}
+}
+
+/*Main navigation area*/
+.navbar-default {
+	font-family: 'Lucida Grande', sans-serif;
+	border: 0;
+	margin-bottom: 0;
+
+	.navbar-collapse {
+		background-color: #595959;
+
+		@media screen and (max-width: 768px) {
+			padding: 0;
+		}
+
+		/*Navigation links*/
+		.navbar-nav {
+			margin: 0 40px;
+
+			@media screen and (max-width: 768px) {
+				margin: 0;
+			}
+
+			li {
+				a {
+					color: #FFFFFF;
+					transition: 0.3s;
+
+					&:hover {
+						color: #2C2C2C;
+						background-color: #FFFFFF;
+					}
+
+					&:focus {
+						color: #FFFFFF;
+						background-color: #FF0000;
+					}
+				}
+			}
+
+			/* Dropdown menu*/
+			.open {
+				a {
+					color: #2C2C2C;
+
+					&:hover {
+						color: #FFFFFF;
+						background-color: #FF0000;
+					}
+				}
+
+				@media screen and (max-width: 768px) {
+					a {
+						color: #2C2C2C!important;
+
+						&:hover {
+							color: #FFFFFF!important;
+							background-color: #FF0000!important;
+						}
+					}
+
+					/*Link Products*/
+					.dropdown-toggle {
+
+						&:focus {
+							color: #FFFFFF!important;
+						}
+
+					}
+				}
+			}
+		}
+
+		/*Authentication, search navigation*/
+		.navbar-right {
+			li {
+				a {
+					color: black;
+
+					&:hover {
+						color: #FFFFFF;
+						background-color: #595959;
+					}
+
+					&:focus {
+						color: black;
+						background-color: #595959;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+

@@ -13,7 +13,6 @@ export class AppComponent implements OnInit{
 
 	constructor(private _categoriesService: CategoriesService) {}
 
-
 	ngOnInit():void {
 		this._categoriesService
 			.getCategories()

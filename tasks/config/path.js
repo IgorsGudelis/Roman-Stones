@@ -19,7 +19,7 @@ module.exports = {
 		html: app.baseDest + 'app/',
 		js: app.baseDest + 'app/',
 		css: app.baseDest + 'app/',
-		img: app.baseDest + 'app/imgs/'
+		img: app.baseDest + 'app/'
 	},
 	watch: {
 		scss: app.baseSrc + '/**/*.scss'

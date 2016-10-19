@@ -5,12 +5,15 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule}   from '@angular/forms';
 import {HttpModule}    from '@angular/http';
 
-import {AppComponent, NavComponent}   from './components/index';
+import {AppComponent, NavComponent,
+		HomeComponent, FooterComponent}   from './components/index';
 import {CategoriesService} from "./services/index";
 
 @NgModule({
 	imports: [BrowserModule, FormsModule, HttpModule],
-	declarations: [AppComponent, NavComponent],
+	declarations: [
+		AppComponent, NavComponent,
+		HomeComponent, FooterComponent],
 	providers: [CategoriesService],
 	bootstrap:    [AppComponent]
 })

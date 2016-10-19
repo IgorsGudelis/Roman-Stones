@@ -31,7 +31,8 @@
                 defaultExtension: 'js'
             },
             rxjs: {
-                defaultExtension: 'js'
+                main: './Rx.js'
+                //defaultExtension: 'js'
             }
         }
     });

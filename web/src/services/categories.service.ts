@@ -15,7 +15,7 @@ export class CategoriesService{
 	categoriesChanges: EventEmitter<any> = new EventEmitter<any>();
 
 	constructor(private _http: Http){
-		this._categoriesUrl = UrlResolver.getCategoriesUrl();
+		this._categoriesUrl = UrlResolver.getCategoriesUrl();//gets url for getting list of categories
 	}
 
 	//Gets categories from server
