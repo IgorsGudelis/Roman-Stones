@@ -28,6 +28,27 @@ export class CategoriesManager {
 			categoriesList.push(category);//creates array of Category instances
 		});
 
+		categoriesList = this.categoriesSort(categoriesList);
+
 		return categoriesList;
+	}
+
+	//Sorts array of Category instances by category
+	categoriesSort(items: Category[]): Category[] {
+		let tmpVal: Category = new Category();//temp variable for Category item;
+		let length = items.length;
+
+		//bubble sort
+		for(let i = 0; i < length; i++) {
+			for(let j = 0; j < length - 1 - i; j++) {
+				if(items[j + 1].category < items[j].category) {
+					tmpVal = items[j + 1];
+					items[j + 1] = items[j];
+					items[j] = tmpVal;
+				}
+			}
+		}
+
+		return items;
 	}
 }

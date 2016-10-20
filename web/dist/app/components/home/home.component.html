@@ -1,1 +1,58 @@
-<p>This is home component</p>
+<div class="rs-home-content">
+	<div class="row">
+		<div class="col-sm-12 col-xs-12">
+			<div class="rs-home-categories">
+				<ul>
+					<li *ngFor="let item of categories">
+						<div class="rs-category-item">
+							<div class="row">
+								<div class="col-sm-4 col-xs-12">
+									<div class="rs-category-avatar">
+										<div class="well">
+											<img src="../../imgs/{{item.category}}.jpg" alt="anchor">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-8 col-xs-12">
+									<div class="row">
+										<div class="col-sm-12 col-xs-12">
+											<div class="rs-category-desc">
+												<div class="well">
+													<h3>{{item.category}}</h3>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin
+														quis mauris at ultricies. Donec ligula nisi, rutrum quis nibh non, convallis
+														tincidunt enim. Proin dui justo, hendrerit a iaculis in, ullamcorper id
+														sapien. Curabitur lacinia orci ut arcu interdum pellentesque. Etiam eu erat
+														non nisl fringilla imperdiet eu et felis. Quisque ut tellus dui. Quisque
+														congue odio id gravida faucibus. Vestibulum id finibus odio. Donec mollis
+														aliquet ipsum vitae aliquet. Maecenas nec tortor at turpis auctor sagittis.
+														Etiam at posuere lorem. Proin facilisis lacus lectus. Mauris elit nunc,
+														varius et lorem vel, suscipit dignissim libero. Cras rhoncus risus sit amet
+														sapien pellentesque, non feugiat diam imperdiet.
+														Phasellus id gravida libero. Duis feugiat arcu at euismod viverra. Mauris
+														tellus est, volutpat eu condimentum et, dignissim nec diam. Aliquam erat
+														volutpat. Mauris iaculis a nunc rutrum feugiat. Vestibulum vel vulputate
+														enim, pulvinar tristique diam. Aliquam iaculis vitae nulla pulvinar luctus.
+														Curabitur scelerisque enim in erat fermentum rutrum.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 col-xs-8 pull-right">
+											<div class="btn rs-home-category-view">
+												View
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+

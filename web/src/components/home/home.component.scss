@@ -1,0 +1,66 @@
+.rs-home-content {
+
+	/*List of categories*/
+	.rs-home-categories {
+
+		ul {
+			list-style: none;
+		}
+
+		/*Category item*/
+		.rs-category-item {
+			padding: 15px;
+			margin-top: 40px;
+			border: 1px solid  #595959;
+
+			/*Category foto*/
+			.rs-category-avatar {
+				height: auto;
+
+				.well {
+					border-radius: 0;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			/*Category description*/
+			.rs-category-desc {
+				height: 350px;
+				text-align: justify;
+				margin-bottom: 10px;
+				overflow-y: auto;
+
+				.well {
+					border-radius: 0;
+
+					h3 {
+						text-align: center;
+					}
+				}
+			}
+
+			/*View vategory*/
+			.rs-home-category-view {
+				width: 80%;
+				color: #FFFFFF;
+				border: 1px solid #595959;
+				border-radius: 0;
+				background-color: #595959;
+				cursor: pointer;
+				transition: 0.3s;
+
+				&:hover, &:focus {
+					color: #595959;
+					background-color: #FFFFFF;
+				}
+
+				@media screen and (max-width: 480px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

@@ -6,6 +6,7 @@ import {Category} from '../models/index';
 import {CategoriesManager} from '../helpers/index';
 import {UrlResolver} from "./index";
 
+
 @Injectable()
 export class CategoriesService{
 	private _categoriesUrl: string;
@@ -14,8 +15,10 @@ export class CategoriesService{
 	private _categoriesManager: CategoriesManager = new CategoriesManager();
 	categoriesChanges: EventEmitter<any> = new EventEmitter<any>();
 
+
 	constructor(private _http: Http){
-		this._categoriesUrl = UrlResolver.getCategoriesUrl();//gets url for getting list of categories
+		//gets url for getting list of categories
+		this._categoriesUrl = UrlResolver.getCategoriesUrl();
 	}
 
 	//Gets categories from server
@@ -23,7 +26,14 @@ export class CategoriesService{
 		return this._http.get(this._categoriesUrl)
 			.map(res => {
 				let items = res.json();
-				return this._categoriesManager.createCategoriesList(items);// creates and returns array of Category instances
+
+				// creates array of Category instances
+				let categories: Category[] = this._categoriesManager.createCategoriesList(items);
+
+				//sends categories items for subscribers
+				this.categoriesChanges.emit(categories);
+
+				return categories;
 			});
 	}
 

@@ -82,7 +82,7 @@
 		.navbar-right {
 			li {
 				a {
-					color: black;
+					color: #000000;
 
 					&:hover {
 						color: #FFFFFF;
@@ -90,7 +90,7 @@
 					}
 
 					&:focus {
-						color: black;
+						color: #000000;
 						background-color: #595959;
 					}
 				}

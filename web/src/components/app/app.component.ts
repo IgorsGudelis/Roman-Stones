@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
-import {Category} from '../../models/index';
-import {UrlResolver, CategoriesService} from "../../services/index";
+import { Category } from '../../models/index';
+import { CategoriesService } from "../../services/index";
 
 @Component({
 	moduleId: module.id,
@@ -14,6 +14,7 @@ export class AppComponent implements OnInit{
 	constructor(private _categoriesService: CategoriesService) {}
 
 	ngOnInit():void {
+		//Gets all categories
 		this._categoriesService
 			.getCategories()
 			.subscribe(res =>this.categories = res);

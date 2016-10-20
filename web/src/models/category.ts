@@ -5,9 +5,9 @@ export class Category {
 	category: string;
 	products: Product[];
 
-	constructor(obj: any) {
-		this._id = obj&&obj._id;
-		this.category = obj&&obj.category;
-		this.products = obj&&obj.products;
+	constructor(obj?: any) {
+		this._id = obj ? obj&&obj._id : 0;
+		this.category = obj ? obj&&obj.category : '';
+		this.products = obj ? obj&&obj.products : [];
 	}
 }
