@@ -8,7 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
-module.exports = function(options) {
+module.exports = function(options, {since: gulp.lastRun('build:js')}) {
 	return function() {
 		return combiner(
 			gulp.src(options.src),

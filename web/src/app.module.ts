@@ -6,18 +6,22 @@ import {FormsModule}   from '@angular/forms';
 import {HttpModule}    from '@angular/http';
 import { routing } from './app.routing';
 
-import {AppComponent, NavComponent,
-		HomeComponent, FooterComponent}   from './components/index';
+import {AppComponent,
+		NavComponent,
+		CarouselComponent,
+		HomeComponent,
+		FooterComponent}   from './components/index';
 import {CategoriesService} from "./services/index";
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		NavComponent,
+		CarouselComponent,
 		HomeComponent,
 		FooterComponent],
 	providers: [CategoriesService],
 	imports: [BrowserModule, FormsModule, HttpModule, routing],
-	bootstrap:    [AppComponent]
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

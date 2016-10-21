@@ -9,7 +9,7 @@ const combiner = require('stream-combiner2').obj;
 module.exports = function(options) {
 	return function() {
 		return combiner(
-			gulp.src(options.src),
+			gulp.src(options.src, {since: gulp.lastRun('build:img')}),
 			imagemin({//compresses images
 				progressive: true,
 				svgoPlugins: [{removeViewBox: false}],
